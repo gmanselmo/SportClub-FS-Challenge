@@ -1,0 +1,111 @@
+header {
+    background-color: white;
+    height: fit-content;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+
+        a {
+
+            img {
+                width: 40rem;
+            }
+
+        }
+
+    }
+
+    nav {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            column-gap: 4rem;
+
+            li {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                cursor: pointer;
+                list-style: none;
+
+                a {
+
+                    text-decoration: none;
+                    font-size: 2rem;
+                    color: black;
+
+                }
+
+            }
+
+            #spclub {
+
+                background-color: #ffd300;
+                border: 2px solid #ffd300;
+                border-radius: 5rem;
+                padding: 1.6rem 3rem;
+
+                a {
+                    font-weight: bolder;
+                }
+
+                &:hover {
+
+                    border: 2px solid black;
+                    
+                }
+
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 513px) {
+
+    header {
+        padding: 3rem;
+        justify-content: center;
+
+        div {
+
+            a {
+
+                img {
+
+                    width: 30rem;
+                }
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: 513px) and (max-width: 870px) {
+
+    header {
+        padding: 3rem;
+        justify-content: center;
+
+        div {
+
+            a {
+
+                img {
+
+                    width: 30rem;
+                }
+            }
+        }
+    }
+
+    
+}

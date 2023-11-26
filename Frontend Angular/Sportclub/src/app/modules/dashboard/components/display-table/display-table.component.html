@@ -1,0 +1,61 @@
+<section id="modalOp">
+    <h1>CLIENTES</h1>
+    <button (click)="openModal('new', null)">Nuevo</button>
+</section>
+
+<section id="articlesSection">
+    <table *ngIf="show">
+        <tr>
+            <th>DNI</th>
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>FECHA NACIMIENTO</th>
+            <th>¿ES DE GBA?</th>
+            <th>ACCIONES</th>
+        </tr>
+        <tr *ngFor="let objeto of listObjects">
+            <td class="tdMod">{{ objeto.dni }}</td>
+            <td class="tdMod">{{ objeto.name }}</td>
+            <td class="tdMod">{{ objeto.lastname }}</td>
+            <td class="tdMod">{{ objeto.birth_date }}</td>
+            <td class="tdMod">{{ objeto.isGBA ? "Si" : "No" }}</td>
+            <td class="iconContainer">
+                <a (click)="openModal('modify', objeto)"><i class="fa-solid fa-pencil icons"></i></a>
+                <a (click)="deleteCustomerById(objeto.dni)"><i class="fa-solid fa-x icons"></i></a>
+            </td>
+        </tr>
+    </table>
+
+    <p *ngIf="!show">Lista de clientes vacía, carga uno nuevo.</p>
+
+</section>
+
+<div id="modal" *ngIf="showModal">
+    <div>
+        <div class="modal">
+
+            <form>
+                <h3 id="title">{{ title }}</h3>
+
+                <input type="number" *ngIf="dni" id="dni" name="dni" [(ngModel)]="formData.dni" placeholder="dni" required>
+    
+                <input type="text" id="name" name="name" [(ngModel)]="formData.name" placeholder="nombre" required>
+    
+                <input type="text" id="lastname" name="lastname" [(ngModel)]="formData.lastname" placeholder="apellido" required>
+                
+                <div id="manuals">
+                    <label for="birth_date">Fecha Nac.</label>
+                    <input type="date" id="birth_date" name="birth_date" [(ngModel)]="formData.birth_date">
+                    <label for="isGBA">¿Gran Buenos Aires?:</label>
+                    <input type="checkbox" id="isGBA" name="isGBA" [(ngModel)]="formData.isGBA">
+                </div>
+
+                <div>
+                    <button (click)="closeModal()">Cerrar</button>
+                    <button type="button" *ngIf="create" (click)="submitForm('new')">Cargar</button>
+                    <button type="button" *ngIf="!create" (click)="submitForm('update')">Cargar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+#fixed {
+    position: fixed;
+    width: 100%;
+
+    app-header {
+        position: relative;
+    }
+
+    app-search-bar {
+        position: relative;
+    }
+}
+
+#loaner {
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffd300;
+    display: flex;
+    justify-content: center;
+
+    p {
+        font-size: 2rem;
+        color: #202128; 
+        font-style: italic;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+}
+

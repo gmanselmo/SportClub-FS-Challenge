@@ -1,0 +1,145 @@
+footer {
+
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        div {
+            img {
+                width: 20rem;
+            }
+
+            #afip {
+                width: 10rem;
+            }
+        }
+        
+        div {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h3 {
+
+                font-size: 1.6rem;
+
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+                list-style: none;
+                padding-top: 2rem;
+                flex-wrap: wrap;
+
+                li {
+                    font-size: 1.4rem;
+                    color: gray;
+
+                }
+            }
+        }
+
+    }
+
+    #decoder {
+        border-bottom: 1px solid white;
+        padding-top: 5rem;
+    }
+
+    #copy {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        row-gap: 1rem;
+        flex-wrap: wrap;
+
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+        
+        }
+    }
+    
+}
+
+@media screen and (max-width: 513px) {
+
+    footer {
+
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem;
+        flex-wrap: wrap;
+    
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+    
+            div {
+                img {
+                    width: 20rem;
+                }
+    
+                #afip {
+                    width: 10rem;
+                }
+            }
+            
+            div {
+                flex-direction: row;
+                column-gap: 3rem;
+
+                h3 {
+                    padding-top: 3rem;
+                }
+
+    
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 2rem;
+                    list-style: none;
+                    padding: 2rem;
+                    flex-wrap: wrap;
+    
+                    li {
+                        font-size: 1.4rem;
+                        color: gray;
+    
+                    }
+                }
+            }
+    
+        }
+    
+        #decoder {
+            border-bottom: 1px solid white;
+            padding-top: 5rem;
+        }
+    
+        #copy {
+            row-gap: 3rem;
+
+        }
+        
+    }
+
+}

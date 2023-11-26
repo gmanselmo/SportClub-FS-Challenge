@@ -1,0 +1,27 @@
+<form action="">
+    <div id="searchBar">
+        <input type="text" placeholder="busqueda por nombre, apellido o dni" (keyup)="search($event)">
+    </div>
+
+    <div id="filterBy">
+
+        <div id="dateSelect">
+            <div>
+                <label for="fromDate">DESDE </label>
+                <input type="date" id="fromDate" [(ngModel)]="fromDate" [ngModelOptions]="{standalone: true}" (click)="check('1')">
+            </div>
+    
+            <div>
+                <label for="toDate">HASTA </label>
+                <input type="date" id="toDate" [(ngModel)]="toDate" [ngModelOptions]="{standalone: true}" (click)="check('1')">
+            </div>
+        </div>
+    
+        <div id="gbaCheck">
+            <input type="checkbox" id="myCheckbox" [(ngModel)]="isChecked" [ngModelOptions]="{standalone: true}" (click)="check('check')">
+            <label for="myCheckbox">GBA</label>
+        </div>
+
+    </div>
+
+</form>
