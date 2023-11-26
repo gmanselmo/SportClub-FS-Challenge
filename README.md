@@ -1,8 +1,8 @@
 ***********************************************************
-********************CHALLENGE SPORT CLUB*******************
+******************CHALLENGE SPORT CLUB****************
 ***********************************************************
 
-Tecnologías usadas:
+# Tecnologías usadas
 
 Backend:
 Base de datos: MySQL 11.1.3-MariaDB, client 15.2 for Linux.
@@ -37,10 +37,10 @@ Workbench
 Konsole (KDE Terminal)
 
 -----------------------------------------------------------------
-EJECUCIÓN PASO A PASO.
+EJECUCIÓN PASO A PASO
 -----------------------------------------------------------------
 
-##BASE DE DATOS.
+# BASE DE DATOS.
 
 Tener instalado MySQL (#REQUISITO)
 
@@ -50,7 +50,7 @@ Tener instalado MySQL (#REQUISITO)
 CREATE DATABASE sportclubdb;
 
 
-##PREPARANDO EL ENTORNO DE PYTHON.
+# PREPARANDO EL ENTORNO DE PYTHON
 
 * Instalar Python (#REQUISITO)
 https://www.python.org/downloads/
@@ -68,7 +68,7 @@ pip install asgiref==3.7.2 Django==4.2.7 django-cors-headers==4.3.1 django-filte
 Recomiendo abrir el VsCode e instalar la extensión C# de muhammad-sammy y probar si cumple dependencias antes de instalar otra cosa, ya que esta extensión instala los headers necesarios y en la mayoría de los casos evita tener que instalarlo manualmente desde la web de Microsoft.**
 
 
-##PREPARANDO EL BACKEND
+# PREPARANDO EL BACKEND
 
 * Clonar el contenido de la carpeta de Backend Django de este repositorio. Recomiendo colocar su contenido en la misma ruta del virtual enviroment, logrando que el venv y la carpeta src queden paralelos en jerarquía. (#OBLIGATORIO)
 /mi_carpeta1/venv
@@ -89,7 +89,7 @@ python manage.py makemigrations
 python manage.py runserver
 
 
-##PREPARANDO EL ENTORNO DE ANGULAR:
+# PREPARANDO EL ENTORNO DE ANGULAR:
 
 *Instalar nodejs y npm** (#REQUISITO)
 https://nodejs.org/
@@ -102,7 +102,7 @@ Set-ExecutionPolicy RemoteSigned
 Luego reiniciar el sistema e intentar instalar nodejs, npm o Angular Cli de nuevo.**
 
 
-##PREPARANDO EL FRONTEND
+# PREPARANDO EL FRONTEND
 
 * Clonar el contenido de la carpeta de Frontend Angular de este repositorio donde se desee y hacer posicionarse dentro del directorio Sportclub/ (#REQUISITO)
 
@@ -119,7 +119,7 @@ ng serve -o
 **Debería abrirse el navegador por defecto automaticamente, sino navegar a http://localhost:4200/**
 
 
-## CREDENCIALES:
+# CREDENCIALES
 User: sportclub
 Password: sportclub
 
